@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <!-- Include your main stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
+  <!-- Include your main stylesheet using the baseurl -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
   <!-- Load Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
         integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6QbxL+6KLXbxFsrR5UBj3Vbuw9TJ+dqTJWnK6C2QnWqTv2LWRRwz4FZg8LNt6z58Pg==" 
@@ -16,17 +16,17 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="profile">
-        <!-- Replace with your own image URL -->
-        <img src="/images/bio.PNG" alt="Profile Photo">
+        <!-- Replace with your own image URL using the baseurl -->
+        <img src="{{ site.baseurl }}/images/bio.PNG" alt="Profile Photo">
         <h2>{{ site.profile.name }}</h2>
         <p>{{ site.profile.role }}</p>
       </div>
       <nav class="sidebar-nav">
         <ul>
-          <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
-          <li><a href="/publications.html"><i class="fas fa-book"></i> Publications</a></li>
-          <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="{{ site.baseurl }}/"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="{{ site.baseurl }}/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+          <li><a href="{{ site.baseurl }}/publications.html"><i class="fas fa-book"></i> Publications</a></li>
+          <li><a href="{{ site.baseurl }}/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
     </aside>
