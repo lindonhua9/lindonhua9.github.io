@@ -1,89 +1,63 @@
-/* Container for centering content */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Overall wrapper to arrange sidebar and content side by side */
+.wrapper {
+  display: flex;
+  min-height: 100vh;
 }
 
-/* Base styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  line-height: 1.6;
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background: #2C3E50;  /* Dark blue-gray background */
+  color: #ECF0F1;       /* Light text color */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Header styling */
-header {
-  background: #f4f4f4;
-  padding: 1em 0;
-  border-bottom: 1px solid #ddd;
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 30px;
 }
-header h1 {
-  margin: 0;
+
+.sidebar .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-header h1 a {
-  text-decoration: none;
-  color: #333;
+
+.sidebar .profile h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
 }
-header nav ul {
+
+.sidebar-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-header nav ul li {
-  display: inline-block;
-  margin: 0 1em;
+
+.sidebar-nav ul li {
+  margin: 15px 0;
 }
-header nav ul li a {
+
+.sidebar-nav ul li a {
+  color: #ECF0F1;
   text-decoration: none;
-  color: #333;
-}
-
-/* Main content styling */
-main {
-  padding: 2em 0;
-}
-
-/* Footer styling */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-}
-
-/* Form styling (for the contact page) */
-form {
-  margin-top: 1em;
+  font-size: 1.1em;
   display: flex;
-  flex-direction: column;
-  max-width: 600px;
-}
-form label {
-  margin: 0.5em 0 0.2em;
-}
-form input, form textarea {
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-form button {
-  margin-top: 1em;
-  padding: 0.7em;
-  border: none;
-  background: #333;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
+  align-items: center;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  header nav ul li {
-    display: block;
-    margin: 0.5em 0;
-  }
+.sidebar-nav ul li a i {
+  margin-right: 8px;
+  color: #1ABC9C;  /* Accent color for icons */
+}
+
+/* Main content area styling */
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #ECF0F1;  /* Light background */
+  box-sizing: border-box;
 }
 
