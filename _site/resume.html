@@ -4,36 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume - Yindong Hua - Research Assistant</title>
-  <!-- Include your main stylesheet -->
+  <!-- Link to your CSS file with baseurl support -->
   <link rel="stylesheet" href="/css/style.css">
   <!-- Load Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6QbxL+6KLXbxFsrR5UBj3Vbuw9TJ+dqTJWnK6C2QnWqTv2LWRRwz4FZg8LNt6z58Pg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/plugins/font-awesome/css/all.min.css">
 </head>
 <body>
   <div class="wrapper">
-    <!-- Sidebar -->
+    <!-- Sidebar Section -->
     <aside class="sidebar">
+      <!-- Profile Block -->
       <div class="profile">
-        <!-- Replace with your own image URL -->
         <img src="/images/bio.PNG" alt="Profile Photo">
         <h2>Yindong Hua</h2>
         <p>Research Assistant</p>
       </div>
-      <nav class="sidebar-nav">
+      
+      <!-- Contact Information Block -->
+      <div class="contact-info">
         <ul>
-          <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
-          <li><a href="/publications.html"><i class="fas fa-book"></i> Publications</a></li>
-          <li><a href="/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:yindong.hua@stonybrook.edu">yindong.hua@stonybrook.edu</a>
+          </li>
+          
+          
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:631-820-5091">631-820-5091</a>
+          </li>
+          
+          
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>8 Hirsch Ave, Coram, NY, 11727</span>
+          </li>
+          
         </ul>
-      </nav>
+      </div>
+      
+      <!-- Social Media Links Block -->
+      <div class="social-links">
+        <ul>
+          
+          <li>
+            <a href="https://www.linkedin.com/in/yindong-hua-b85456bb/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://github.com/lindonhua9" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://twitter.com/your-twitter-handle" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <!-- Education Block -->
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          
+          <li>
+            <strong>Ph.D. in Computer Engineering</strong><br>
+            Stony Brook University<br>
+            <small>01/2020 - 12/2025</small>
+          </li>
+          
+          <li>
+            <strong>Master of Electrical Engineering</strong><br>
+            Peking University<br>
+            <small>09/2013 - 07/2016</small>
+          </li>
+          
+          <li>
+            <strong>Bachelor of Electrical Engineering</strong><br>
+            Henan University<br>
+            <small>09/2009 - 07/2013</small>
+          </li>
+          
+        </ul>
+      </div>
     </aside>
 
-    <!-- Main content area -->
-    <main class="content">
-      <h1 id="resume">Resume</h1>
+    <!-- Main Container: Top Navigation and Content -->
+    <div class="main-container">
+      <!-- Top Navigation Bar -->
+      <nav class="top-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/publications.html">Publications</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Main Content Area -->
+      <main class="content">
+        <h2>
+  <i class="fa-solid fa-file-pdf"></i>
+  Resume
+</h2>
+
+<p>
+  <a href="/files/CV- Yindong Hua_2025.pdf" target="_blank" class="resume-open">
+    <i class="fa-solid fa-external-link-alt"></i>
+    View my resume (PDF)
+  </a>
+</p>
 
 <h2 id="contact-information">Contact Information</h2>
 
@@ -65,21 +154,33 @@
 
 <h3 id="research-assistant-at-stony-brook-university">Research Assistant at Stony Brook University</h3>
 
-<p><strong>Project: Multimodal Brain-Behavior Detection in Disorder of Consciousness (09/2023 - Present)</strong></p>
+<p><strong>Project: Motion-Based Computer Vision for Consciousness Recovery (10/2024-present).</strong></p>
 <ul>
-  <li>Designing a Python-based neurotechnology platform using machine learning and signal processing to detect command-following behaviors in severe traumatic brain injury (TBI) patients.</li>
-  <li>Employed a machine learning facial recognition algorithm to track micro-expressions indicative of voluntary movements, achieving earlier detection.</li>
-  <li>Proposed an LSTM-based model for EEG signal analysis, reaching 80% accuracy on healthy control subjects.</li>
+  <li>Developed a convolutional VAE model using Pytorch to encode high-dimensional facial motion trajectories into robust, low-dimensional (128-dim) latent embeddings, achieving an average reconstruction MSE of 0.012.</li>
+  <li>Built and optimized a Transformer encoder to predict future latent vectors from historical embeddings, effectively capturing temporal dependencies in patient motion and attaining a shorter ahead forecasting (&lt;= 10-step) for less coma patients.</li>
+  <li>Validated the hypothesis linking motion predictability to consciousness recovery by stratifying results using Glasgow Coma Scale (GCS) and movement labels, generated detailed visualizations of prediction-error trajectories.</li>
 </ul>
 
-<p><strong>Project: Scalable Home-Based Health Monitoring Infrastructure (10/2022 - 08/2023)</strong></p>
+<p><strong>Project: Contrastive Learning with LLM for Consciousness Level Classification (09/2023-09/2024).</strong></p>
 <ul>
-  <li>Engineered a scalable, fault-tolerant IoT-based health monitoring system using Python and Node.js.</li>
-  <li>Developed a data-agnostic pipeline using publish–subscribe mechanisms, significantly reducing configuration efforts.</li>
-  <li>Ensured high availability with InfluxDB and MySQL, maintaining 24/7 uptime with less than 1% data loss.</li>
+  <li>Created a custom EEG Dataset object with strategic daily segment selection per subject to maintain balanced class distribution, improving model generalizability.</li>
+  <li>Built a dual-encoder architecture (CNN-based patch embedding + GPT-2 LLM backbone) for robust EEG feature extraction.</li>
+  <li>Implemented advanced contrastive learning to learn shared (common across subjects), private (subject-specific), and orthogonal (disentangled) EEG representations using NT-Xent loss and orthogonality constraints.</li>
+  <li>Fine-tuned embeddings on Glasgow Coma Scale (GCS) prediction, achieving strong classification performance (Accuracy:
+76%, AUROC: 0.85, F1-score: 0.74).</li>
 </ul>
 
-<p><strong>Project: Radar-based Non-contact Vital Signs Monitoring (01/2021 - 10/2022)</strong></p>
+<p><strong>Project: Scalable Home-Based Health Monitoring Infrastructure (10/2022-08/2023).</strong></p>
+<ul>
+  <li>Engineered a scalable, manageable, and fault-tolerant IoT-based distributed health monitoring system using Python and Node.js, utilizing microservices architecture and Docker containerization for modular deployment and CI/CD practices via
+AWS Greengrass.</li>
+  <li>Created a data-agnostic pipeline using publish-subscribe mechanisms, reducing configuration efforts by 25x.</li>
+  <li>Implemented automated monitoring and recovery with logging, dashboards, caching strategies, and reboot protocols.</li>
+  <li>Leveraged InfluxDB and MySQL for high-availability time-series and relational data storage, ensuring data integrity.</li>
+  <li>Validated system performance in a simulated smart home environment with 26 sensor nodes, achieving robust 24/7 operation with less than 1% data loss.</li>
+</ul>
+
+<p><strong>Project: Radar-based Non-contact Vital Signs Monitoring (01/2021 - 10/2022).</strong></p>
 <ul>
   <li>Led development of an advanced radar signal processing system in Python for non-contact vital signs monitoring.</li>
   <li>Proposed a dynamic range-bin selection algorithm that improved the Periodic-to-Noise Ratio by 2 dB.</li>
@@ -114,7 +215,8 @@ IEEE Radar Conference (RadarConf23), 2023.</li>
 </ul>
 
 
-    </main>
+      </main>
+    </div>
   </div>
 </body>
 </html>

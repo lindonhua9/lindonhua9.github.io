@@ -1,0 +1,46 @@
+Local test:
+# Start the local server with:
+bundle exec jekyll serve
+# Open your web browser
+http://localhost:4000/ 
+
+Jekyll-based GitHub pages structure:
+├── _config.yml           ← your main settings file
+├── _data/
+│   ├── about-me.yml      ← “About Me” data
+│   ├── experience.yml    ← your experience entries
+│   ├── skills.yml        ← your skills list
+│   └── publication.yml   ← your publications markdown blob
+├── _includes/
+│   └── header.html       ← shared partials (optional)
+├── _layouts/
+│   ├── default.html      ← your base layout (includes CSS/Font-Awesome links)
+│   └── page.html         ← other custom layouts
+├── assets/
+│   ├── css/
+│   │   └── style.css     ← your main stylesheet
+│   └── plugins/
+│       └── font-awesome/
+│           ├── css/
+│           │   └── all.min.css
+│           └── webfonts/
+│               └── ⋯
+├── index.md              ← your homepage (pulls in data via `site.data`)
+├── resume.html           ← a standalone page
+├── publications.html     ← optional standalone page
+├── contact.html          ← optional standalone page
+└── publication.md        ← if you still have a root-level include for publications
+
+Key points
+
+_config.yml lives at the root and defines your baseurl, site-wide variables (profile, social links, etc.).
+
+_data/ holds structured YAML files (about-me.yml, experience.yml, skills.yml, publication.yml) that you pull into your templates with site.data.*.
+
+_includes/ (or you can use include_relative) is where you put any small reusable snippets or raw Markdown that you want to inject.
+
+_layouts/ defines your page shell(s). default.html typically contains your <head> (with CSS + Font Awesome), sidebar, and {{ content }} injection.
+
+assets/ is where you keep all your CSS, JS, images, and (in your case) a local copy of Font Awesome (both the css/ and webfonts/ folders).
+
+Top-level .md/.html files become site pages—index.md for the homepage (where you loop through your _data sets), plus any other pages you need (resume.html, contact.html, etc.).

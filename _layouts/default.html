@@ -4,37 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <!-- Include your main stylesheet using the baseurl -->
+  <!-- Link to your CSS file with baseurl support -->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
   <!-- Load Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6QbxL+6KLXbxFsrR5UBj3Vbuw9TJ+dqTJWnK6C2QnWqTv2LWRRwz4FZg8LNt6z58Pg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/all.min.css">
 </head>
 <body>
   <div class="wrapper">
-    <!-- Sidebar -->
+    <!-- Sidebar Section -->
     <aside class="sidebar">
+      <!-- Profile Block -->
       <div class="profile">
-        <!-- Replace with your own image URL using the baseurl -->
         <img src="{{ site.baseurl }}/images/bio.PNG" alt="Profile Photo">
         <h2>{{ site.profile.name }}</h2>
         <p>{{ site.profile.role }}</p>
       </div>
-      <nav class="sidebar-nav">
+      
+      <!-- Contact Information Block -->
+      <div class="contact-info">
         <ul>
-          <li><a href="{{ site.baseurl }}/"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="{{ site.baseurl }}/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
-          <li><a href="{{ site.baseurl }}/publications.html"><i class="fas fa-book"></i> Publications</a></li>
-          <li><a href="{{ site.baseurl }}/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          {% if site.profile.email %}
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ site.profile.email }}">{{ site.profile.email }}</a>
+          </li>
+          {% endif %}
+          {% if site.profile.phone %}
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:{{ site.profile.phone }}">{{ site.profile.phone }}</a>
+          </li>
+          {% endif %}
+          {% if site.profile.address %}
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{ site.profile.address }}</span>
+          </li>
+          {% endif %}
         </ul>
-      </nav>
+      </div>
+      
+      <!-- Social Media Links Block -->
+      <div class="social-links">
+        <ul>
+          {% if site.social.linkedin %}
+          <li>
+            <a href="{{ site.social.linkedin }}" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.github %}
+          <li>
+            <a href="{{ site.social.github }}" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.twitter %}
+          <li>
+            <a href="{{ site.social.twitter }}" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+      
+      <!-- Education Block -->
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          {% for edu in site.education %}
+          <li>
+            <strong>{{ edu.degree }}</strong><br>
+            {{ edu.institution }}<br>
+            <small>{{ edu.period }}</small>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </aside>
 
-    <!-- Main content area -->
-    <main class="content">
-      {{ content }}
-    </main>
+    <!-- Main Container: Top Navigation and Content -->
+    <div class="main-container">
+      <!-- Top Navigation Bar -->
+      <nav class="top-nav">
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/resume.html">Resume</a></li>
+          <li><a href="{{ site.baseurl }}/publications.html">Publications</a></li>
+          <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Main Content Area -->
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
   </div>
 </body>
 </html>

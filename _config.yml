@@ -1,24 +1,19 @@
 title: "Yindong Hua - Research Assistant"
 description: "Online CV and personal website of Yindong Hua, Research Assistant at Stony Brook University."
-baseurl: ""         # Leave empty for user/organization sites
+baseurl: ""   # For a GitHub user site, leave this empty; for a project site, set this to "/your-repo-name"
 url: "https://lindonhua9.github.io"
 
-# Personal information and resume details
 profile:
   name: "Yindong Hua"
   role: "Research Assistant"
   email: "yindong.hua@stonybrook.edu"
   phone: "631-820-5091"
   address: "8 Hirsch Ave, Coram, NY, 11727"
-  summary: >
-    I am a research assistant at Stony Brook University with extensive experience in computer engineering,
-    health monitoring systems, and deep learning. My projects focus on developing innovative, data-driven solutions
-    in healthcare and computer vision.
 
 social:
-  linkedin: "https://www.linkedin.com/in/your-linkedin-profile"
+  linkedin: "https://www.linkedin.com/in/yindong-hua-b85456bb/"
   github: "https://github.com/lindonhua9"
-  twitter: "https://twitter.com/your-twitter-handle"   # Remove or update if not applicable
+  twitter: "https://twitter.com/your-twitter-handle"
 
 education:
   - degree: "Ph.D. in Computer Engineering"
@@ -30,46 +25,4 @@ education:
   - degree: "Bachelor of Electrical Engineering"
     institution: "Henan University"
     period: "09/2009 - 07/2013"
-
-experience:
-  - role: "Research Assistant"
-    organization: "Stony Brook University"
-    period: "09/2023 - Present"
-    details: |
-      - **Project: Multimodal Brain-Behavior Detection in Disorder of Consciousness**
-        - Designed a Python-based neurotechnology platform utilizing machine learning and signal processing.
-        - Employed a facial recognition algorithm to track micro-expressions and detect voluntary movements early.
-        - Developed an LSTM-based model for EEG signal analysis with 80% accuracy on healthy control subjects.
-      - **Project: Scalable Home-Based Health Monitoring Infrastructure**
-        - Engineered a fault-tolerant IoT-based distributed health monitoring system using Python and Node.js.
-        - Created a data-agnostic pipeline with publish–subscribe mechanisms and ensured high availability using InfluxDB and MySQL.
-      - **Project: Radar-based Non-contact Vital Signs Monitoring**
-        - Led the development of a radar signal processing system in Python.
-        - Implemented a dynamic range-bin selection algorithm improving the Periodic-to-Noise Ratio by 2 dB.
-        - Applied filtering techniques to reduce respiration error to 1.2 beats per minute.
-  - role: "Research Scholar"
-    organization: "Texas A&M University"
-    period: "08/2018 - 06/2019"
-    details: |
-      - **Project: Deep Learning for Monocular Depth Estimation**
-        - Developed a dilated fully convolutional neural network using Python and PyTorch.
-        - Employed dilated convolutions to expand the receptive field, achieving a 7x reduction in parameters.
-
-skills:
-  - Python
-  - Java
-  - Node.JS
-  - C
-  - Matlab
-  - Git, Docker, AWS (EC2, Greengrass, S3)
-  - Linux/Unix
-  - InfluxDB, MySQL, Redis
-
-publications:
-  - title: "Proteus: Towards a Manageability-focused Home-based Health Monitoring Infrastructure"
-    venue: "14th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics, 2023"
-  - title: "A Study of Practical Radar-based Nighttime Respiration Monitoring at Home"
-    venue: "IEEE Radar Conference (RadarConf23), 2023"
-  - title: "Dilated Fully Convolutional Neural Network for Depth Estimation from a Single Image"
-    venue: "2019 International Conference on Computational Science and Computational Intelligence (CSCI), IEEE, 2019"
 

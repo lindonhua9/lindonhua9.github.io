@@ -1,0 +1,27 @@
+
+- role: "Research Assistant"
+  organization: "Stony Brook University"
+  period: "01/2020 - Present"
+  details: |
+    - **Project: Multimodal Brain-Behavior Detection in Disorder of Consciousness**
+      - Designed a Python-based neurotechnology platform utilizing machine learning and signal processing.
+      - Employed a facial recognition algorithm to track micro-expressions and detect voluntary movements early.
+      - Developed an LSTM-based model for EEG signal analysis with 80% accuracy on healthy control subjects.
+    
+    - **Project: Scalable Home-Based Health Monitoring Infrastructure**
+      - Engineered a fault-tolerant IoT-based distributed health monitoring system using Python and Node.js.
+      - Created a data-agnostic pipeline with publish–subscribe mechanisms and ensured high availability using InfluxDB and MySQL.
+
+    - **Project: Radar-based Non-contact Vital Signs Monitoring**
+      - Led the development of a radar signal processing system in Python.
+      - Implemented a dynamic range-bin selection algorithm improving the Periodic-to-Noise Ratio by 2 dB.
+      - Applied filtering techniques to reduce respiration error to 1.2 beats per minute.
+  
+- role: "Research Scholar"
+  organization: "Texas A&M University"
+  period: "08/2018 - 06/2019"
+  details: |
+    - **Project: Deep Learning for Monocular Depth Estimation**
+      - Developed a dilated fully convolutional neural network using Python and PyTorch.
+      - Employed dilated convolutions to expand the receptive field, achieving a 7x reduction in parameters.
+

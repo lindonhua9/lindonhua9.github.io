@@ -3,7 +3,6 @@ layout: default
 title: Publications
 ---
 
-# Publications
 
 - **Proteus: Towards a Manageability-focused Home-based Health Monitoring Infrastructure.**  
   *Proceedings of the 14th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics, 2023.*
